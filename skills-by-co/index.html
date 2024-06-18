@@ -27,7 +27,7 @@
     <div id="chart"></div>
     <script>
         queue()
-            .defer(d3.json, "https://gist.githubusercontent.com/almostsultry/244f0687d52d3192507c550779da4315/raw/ed0bfd0c5969e8ea28d0c3da47991ef33acd3275/occupation.json")
+            .defer(d3.json, "skills-by-co.json")
             .await(drawAll);
 
         function drawAll(error, dataset) {
